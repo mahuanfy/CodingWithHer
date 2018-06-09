@@ -24,7 +24,6 @@ public class GameOfLifeFrame extends JFrame {
      */
     private boolean stop = false;
 
-    private InitGame initGame;
     private JPanel buttonPanel = new JPanel(new GridLayout(2, 2));
     private JPanel gridPanel = new JPanel();
 
@@ -64,7 +63,7 @@ public class GameOfLifeFrame extends JFrame {
             isStart = false;
             stop = true;
             startGameBtn.setText("开始游戏");
-            initGame = InitInterface.initDate();
+            mainFuction.initMatrix();
             initGridLayout();
             showMatrix();
             gridPanel.updateUI();
@@ -73,10 +72,10 @@ public class GameOfLifeFrame extends JFrame {
 
     private void showMatrix() {
 
-        int[][] matrix = initGame.getMatrix();
+        int[][] matrix = mainFuction.matrix;
         for (int y = 0; y < matrix.length; y++) {
             for (int x = 0; x < matrix[0].length; x++) {
-                if (matrix[y][x] == 1) {
+                if (matrix[y][x] > 0) {
                     textMatrix[y][x].setBackground(Color.BLACK);
                 } else {
                     textMatrix[y][x].setBackground(Color.WHITE);
@@ -89,8 +88,8 @@ public class GameOfLifeFrame extends JFrame {
      * 创建显示的gridlayout布局
      */
     private void initGridLayout() {
-        int rows = initGame.getHeight();
-        int cols = initGame.getWidth();
+        int rows = mainFuction.getN();
+        int cols = mainFuction.getN();
         gridPanel = new JPanel();
         gridPanel.setLayout(new GridLayout(rows, cols));
         textMatrix = new JTextField[rows][cols];
