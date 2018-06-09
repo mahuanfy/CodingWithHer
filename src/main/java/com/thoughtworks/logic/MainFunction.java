@@ -1,9 +1,17 @@
 package com.thoughtworks.logic;
 
-public class MainFuction {
+public class MainFunction {
     private int n = 100;
-    public int[][] matrix = new int[n][n];
-    public int[][] nextmatrix = new int[n][n];
+    public int[][] matrix;
+    public int[][] nextmatrix;
+
+    public MainFunction(int n){
+        this.n = n;
+        matrix = new int[n][n];
+        nextmatrix = new int[n][n];
+    }
+    public MainFunction(){
+    }
 
     public void setN(int n) {
         this.n = n;

@@ -3,14 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="c8cd8501-5e54-4f8f-b5c3-b5fcd400308d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/logic/MainFuction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/logic/MainFuction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/logic/MainFuction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/logic/MainFunction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/ui/GameOfLifeFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/ui/GameOfLifeFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/logic/MainFuctionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/logic/MainFuctionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thoughtworks/logic/MainFuction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thoughtworks/logic/MainFuction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/thoughtworks/logic/MainFuctionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/thoughtworks/logic/MainFunctionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/thoughtworks/logic/MainFuction.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/thoughtworks/ui/GameOfLifeFrame$GameControlTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thoughtworks/ui/GameOfLifeFrame$GameControlTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thoughtworks/ui/GameOfLifeFrame$OpenFileActioner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/thoughtworks/ui/GameOfLifeFrame$OpenPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thoughtworks/ui/GameOfLifeFrame$OpenPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/thoughtworks/ui/GameOfLifeFrame$StartGameActioner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thoughtworks/ui/GameOfLifeFrame$StartGameActioner.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/thoughtworks/ui/GameOfLifeFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thoughtworks/ui/GameOfLifeFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/thoughtworks/logic/MainFuctionTest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,14 +52,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainFuction.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/logic/MainFuction.java">
+      <file leaf-file-name="MainFunction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/logic/MainFunction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2279">
-              <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+            <state relative-caret-position="377">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
               <folding>
-                <element signature="e#144#145#0" expanded="true" />
-                <element signature="e#170#171#0" expanded="true" />
+                <element signature="e#204#205#0" expanded="true" />
+                <element signature="e#230#231#0" expanded="true" />
                 <element signature="e#254#255#0" expanded="true" />
                 <element signature="e#278#279#0" expanded="true" />
               </folding>
@@ -66,11 +67,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainFuctionTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/logic/MainFuctionTest.java">
+      <file leaf-file-name="MainFunctionTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/logic/MainFunctionTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            <state relative-caret-position="155">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#544#545#0" expanded="true" />
@@ -80,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameOfLifeFrame.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GameOfLifeFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/ui/GameOfLifeFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3317">
-              <caret line="116" column="13" selection-start-line="116" selection-start-column="13" selection-end-line="116" selection-end-column="13" />
+            <state relative-caret-position="310">
+              <caret line="52" column="48" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,6 +119,7 @@
       <find>OpenFileActioner</find>
       <find>file</find>
       <find>F</find>
+      <find>durationTextField</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -132,9 +134,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/ui/InitGame.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/ui/InitInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/ui/GameOfLifeFrame.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/logic/MainFuctionTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/logic/MainFuction.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/logic/MainFuctionTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/logic/MainFunction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/ui/GameOfLifeFrame.java" />
       </list>
     </option>
   </component>
@@ -452,7 +455,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528511716011</updated>
-      <workItem from="1528511719351" duration="13678000" />
+      <workItem from="1528511719351" duration="14808000" />
     </task>
     <servers />
   </component>
@@ -489,7 +492,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13678000" />
+    <option name="totallyTimeSpent" value="14808000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1052" extended-state="6" />
@@ -515,10 +518,10 @@
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25305218" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25305218" />
       <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32994652" />
       <window_info anchor="bottom" id="Terminal" weight="0.23418424" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973261" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24973261" />
       <window_info id="JRebel" side_tool="true" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32963374" />
       <window_info anchor="right" id="Theme Preview" />
@@ -529,6 +532,41 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Designer" order="0" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info active="true" anchor="bottom" id="Run" order="9" visible="true" weight="0.25305218" />
+      <window_info id="Image Layers" order="1" />
+      <window_info anchor="right" id="Commander" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="9" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="JRebel" order="3" side_tool="true" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="0" weight="0.23418424" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="2" weight="0.32963374" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="10" weight="0.25" />
+      <window_info anchor="right" id="Key Promoter X" order="2" />
+      <window_info anchor="bottom" id="Database Changes" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="4" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.32963374" />
+      <window_info anchor="bottom" id="JRebel Executor" order="5" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.24973261" />
+      <window_info anchor="bottom" id="JRebel Console" order="6" side_tool="true" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="right" id="Coverage" order="7" side_tool="true" weight="0.32994652" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.39955604" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -604,10 +642,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/logic/MainFuctionTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/thoughtworks/logic/MainFunctionTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        <state relative-caret-position="155">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#544#545#0" expanded="true" />
@@ -616,25 +654,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/ui/GameOfLifeFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/logic/MainFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3317">
-          <caret line="116" column="13" selection-start-line="116" selection-start-column="13" selection-end-line="116" selection-end-column="13" />
+        <state relative-caret-position="377">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+            <element signature="e#254#255#0" expanded="true" />
+            <element signature="e#278#279#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/logic/MainFuction.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/ui/GameOfLifeFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2279">
-          <caret line="83" column="5" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+        <state relative-caret-position="310">
+          <caret line="52" column="48" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
           <folding>
-            <element signature="e#144#145#0" expanded="true" />
-            <element signature="e#170#171#0" expanded="true" />
-            <element signature="e#254#255#0" expanded="true" />
-            <element signature="e#278#279#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

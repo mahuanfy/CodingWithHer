@@ -1,6 +1,6 @@
 package com.thoughtworks.ui;
 
-import com.thoughtworks.logic.MainFuction;
+import com.thoughtworks.logic.MainFunction;
 
 import javax.swing.*;
 import java.awt.*;
@@ -9,10 +9,11 @@ import java.awt.event.ActionListener;
 import java.util.concurrent.TimeUnit;
 
 public class GameOfLifeFrame extends JFrame {
-    MainFuction mainFuction = new MainFuction();
+    MainFunction mainFuction = null;
     private JButton openBtn = new JButton("随机页面");
     private JButton startGameBtn = new JButton("暂停");
     private JLabel durationPromtLabel = new JLabel("动画间隔设置(ms为单位)");
+    private JTextField totalNum = new JTextField();
     private JTextField durationTextField = new JTextField();
     private boolean isStart = false;
     private boolean stop = false;
@@ -28,7 +29,7 @@ public class GameOfLifeFrame extends JFrame {
         startGameBtn.addActionListener(new StartGameActioner());
         buttonPanel.add(openBtn);
         buttonPanel.add(startGameBtn);
-        buttonPanel.add(durationPromtLabel);
+        buttonPanel.add(totalNum);
         buttonPanel.add(durationTextField);
         buttonPanel.setBackground(Color.WHITE);
         getContentPane().add("North", buttonPanel);
@@ -43,6 +44,13 @@ public class GameOfLifeFrame extends JFrame {
         public void actionPerformed(ActionEvent e) {
             isStart = false;
             stop = true;
+            int total;
+            try {
+                total = Integer.parseInt(totalNum.getText().trim());
+            } catch (NumberFormatException e1) {
+                total = 50;
+            }
+            mainFuction = new MainFunction(total);
             startGameBtn.setText("开始游戏");
             mainFuction.initMatrix();
             initGridLayout();

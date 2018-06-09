@@ -3,9 +3,9 @@ package com.thoughtworks.logic;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class MainFuctionTest {
+public class MainFunctionTest {
 
-    MainFuction mainFuction = new MainFuction();
+    MainFunction mainFuction = new MainFunction();
 
     @Test
     public void get_num_where_x_1_y_1() {
