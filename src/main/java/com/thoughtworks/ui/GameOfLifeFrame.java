@@ -77,7 +77,7 @@ public class GameOfLifeFrame extends JFrame {
             try {
                 total = Integer.parseInt(totalNum.getText().trim());
             } catch (NumberFormatException e1) {
-                total = 3;
+                total = 20;
             }
             mainFunction = new MainFunction(total);
             startGameBtn.setText("开始游戏");
@@ -94,17 +94,15 @@ public class GameOfLifeFrame extends JFrame {
         for (int y = 0; y < matrix.length; y++) {
             for (int x = 0; x < matrix[0].length; x++) {
                 if (matrix[y][x] > 0) {
-                    textMatrix[y][x].setBackground(Color.BLACK);
+                    textMatrix[y][x].setBackground(Color.decode("#" +000000+ 72 * matrix[y][x] + 160 * matrix[y][x]));
+
                 } else {
-                    textMatrix[y][x].setBackground(Color.WHITE);
+                    textMatrix[y][x].setBackground(Color.decode("#FFFFFF"));
                 }
             }
         }
     }
 
-    /**
-     * 创建显示的gridlayout布局
-     */
     private void initGridLayout() {
         int rows = mainFunction.getN();
         int cols = mainFunction.getN();

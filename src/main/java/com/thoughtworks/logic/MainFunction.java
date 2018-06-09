@@ -1,7 +1,7 @@
 package com.thoughtworks.logic;
 
 public class MainFunction {
-    private int n =3;
+    private int n =20;
     public int[][] matrix;
     public int[][] nextmatrix;
 
