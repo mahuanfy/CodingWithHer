@@ -6,15 +6,16 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
 import java.util.concurrent.TimeUnit;
 
 public class GameOfLifeFrame extends JFrame {
-    MainFunction mainFuction = null;
+    MainFunction mainFunction = null;
     private JButton openBtn = new JButton("随机页面");
     private JButton startGameBtn = new JButton("暂停");
-    private JLabel durationPromtLabel = new JLabel("动画间隔设置(ms为单位)");
-    private JTextField totalNum = new JTextField();
-    private JTextField durationTextField = new JTextField();
+    private JTextField totalNum = new JTextField("随机数的布局大小");
+    private JTextField durationTextField = new JTextField("动画间隔时间");
     private boolean isStart = false;
     private boolean stop = false;
     private JPanel buttonPanel = new JPanel(new GridLayout(2, 2));
@@ -29,7 +30,24 @@ public class GameOfLifeFrame extends JFrame {
         startGameBtn.addActionListener(new StartGameActioner());
         buttonPanel.add(openBtn);
         buttonPanel.add(startGameBtn);
+//        buttonPanel.add(durationPromtLabel);
+        totalNum.addFocusListener(new FocusAdapter()
+        {
+            @Override
+            public void focusGained(FocusEvent e)
+            {
+                totalNum.setText("");
+            }
+        });
         buttonPanel.add(totalNum);
+        durationTextField.addFocusListener(new FocusAdapter()
+        {
+            @Override
+            public void focusGained(FocusEvent e)
+            {
+                durationTextField.setText("");
+            }
+        });
         buttonPanel.add(durationTextField);
         buttonPanel.setBackground(Color.WHITE);
         getContentPane().add("North", buttonPanel);
@@ -50,9 +68,9 @@ public class GameOfLifeFrame extends JFrame {
             } catch (NumberFormatException e1) {
                 total = 50;
             }
-            mainFuction = new MainFunction(total);
+            mainFunction = new MainFunction(total);
             startGameBtn.setText("开始游戏");
-            mainFuction.initMatrix();
+            mainFunction.initMatrix();
             initGridLayout();
             showMatrix();
             gridPanel.updateUI();
@@ -61,7 +79,7 @@ public class GameOfLifeFrame extends JFrame {
     }
 
     private void showMatrix() {
-        int[][] matrix = mainFuction.matrix;
+        int[][] matrix = mainFunction.matrix;
         for (int y = 0; y < matrix.length; y++) {
             for (int x = 0; x < matrix[0].length; x++) {
                 if (matrix[y][x] > 0) {
@@ -77,8 +95,8 @@ public class GameOfLifeFrame extends JFrame {
      * 创建显示的gridlayout布局
      */
     private void initGridLayout() {
-        int rows = mainFuction.getN();
-        int cols = mainFuction.getN();
+        int rows = mainFunction.getN();
+        int cols = mainFunction.getN();
         gridPanel = new JPanel();
         gridPanel.setLayout(new GridLayout(rows, cols));
         textMatrix = new JTextField[rows][cols];
@@ -115,7 +133,7 @@ public class GameOfLifeFrame extends JFrame {
     private class GameControlTask implements Runnable {
         public void run() {
             while (!stop) {
-                mainFuction.check();
+                mainFunction.check();
                 showMatrix();
                 try {
                     TimeUnit.MILLISECONDS.sleep(duration);
