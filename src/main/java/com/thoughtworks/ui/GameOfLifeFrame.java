@@ -157,7 +157,7 @@ public class GameOfLifeFrame extends JFrame {
 
     private class StaticGameActioner implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            mainFunction = new MainFunction(3, Data.startData);
+            mainFunction = new MainFunction(2, Data.startData);
             startGameBtn.setText("开始游戏");
             initGridLayout();
             showMatrix();

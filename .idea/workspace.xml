@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8cd8501-5e54-4f8f-b5c3-b5fcd400308d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/file/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/staticGame.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/logic/MainFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/logic/MainFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/file/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/file/Data.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/thoughtworks/ui/GameOfLifeFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/thoughtworks/ui/GameOfLifeFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thoughtworks/logic/MainFunction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thoughtworks/logic/MainFunction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thoughtworks/ui/GameOfLifeFrame$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thoughtworks/ui/GameOfLifeFrame$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thoughtworks/ui/GameOfLifeFrame$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thoughtworks/ui/GameOfLifeFrame$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thoughtworks/ui/GameOfLifeFrame$GameControlTask.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thoughtworks/ui/GameOfLifeFrame$GameControlTask.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thoughtworks/ui/GameOfLifeFrame$OpenPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thoughtworks/ui/GameOfLifeFrame$OpenPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thoughtworks/ui/GameOfLifeFrame$StartGameActioner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thoughtworks/ui/GameOfLifeFrame$StartGameActioner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/thoughtworks/ui/GameOfLifeFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/thoughtworks/ui/GameOfLifeFrame.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -72,8 +62,8 @@
       <file leaf-file-name="GameOfLifeFrame.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/ui/GameOfLifeFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="854">
-              <caret line="195" column="45" selection-start-line="195" selection-start-column="45" selection-end-line="195" selection-end-column="45" />
+            <state relative-caret-position="139">
+              <caret line="159" column="45" selection-start-line="159" selection-start-column="45" selection-end-line="159" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1775#1931#0" expanded="true" />
@@ -97,8 +87,8 @@
       <file leaf-file-name="Data.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/file/Data.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1007">
-              <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+            <state relative-caret-position="93">
+              <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -158,8 +148,8 @@
         <option value="$PROJECT_DIR$/src/test/java/com/thoughtworks/logic/MainFuctionTest.java" />
         <option value="$PROJECT_DIR$/src/main/resources/staticGame" />
         <option value="$PROJECT_DIR$/src/main/resources/staticGame.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/file/Data.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/logic/MainFunction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/file/Data.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/thoughtworks/ui/GameOfLifeFrame.java" />
       </list>
     </option>
@@ -476,7 +466,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1528511716011</updated>
-      <workItem from="1528511719351" duration="20510000" />
+      <workItem from="1528511719351" duration="20647000" />
     </task>
     <servers />
   </component>
@@ -513,7 +503,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20510000" />
+    <option name="totallyTimeSpent" value="20647000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1052" extended-state="6" />
@@ -712,15 +702,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/file/Data.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1007">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        <state relative-caret-position="93">
+          <caret line="3" column="63" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/thoughtworks/ui/GameOfLifeFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="854">
-          <caret line="195" column="45" selection-start-line="195" selection-start-column="45" selection-end-line="195" selection-end-column="45" />
+        <state relative-caret-position="139">
+          <caret line="159" column="45" selection-start-line="159" selection-start-column="45" selection-end-line="159" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1775#1931#0" expanded="true" />
