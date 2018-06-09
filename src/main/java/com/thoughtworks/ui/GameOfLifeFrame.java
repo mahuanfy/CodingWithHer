@@ -1,5 +1,7 @@
 package com.thoughtworks.ui;
 
+import com.thoughtworks.Main;
+import com.thoughtworks.file.Data;
 import com.thoughtworks.logic.MainFunction;
 
 import javax.swing.*;
@@ -14,11 +16,15 @@ public class GameOfLifeFrame extends JFrame {
     MainFunction mainFunction = null;
     private JButton openBtn = new JButton("随机页面");
     private JButton startGameBtn = new JButton("暂停");
+    private JButton staticGame = new JButton("静态Game");
+    private JButton cycleGame = new JButton("周期Game");
+    private JButton gliderGame = new JButton("滑翔机Game");
+    private JButton symmetricGame = new JButton("对称Game");
     private JTextField totalNum = new JTextField("随机数的布局大小");
     private JTextField durationTextField = new JTextField("动画间隔时间");
     private boolean isStart = false;
     private boolean stop = false;
-    private JPanel buttonPanel = new JPanel(new GridLayout(2, 2));
+    private JPanel buttonPanel = new JPanel(new GridLayout(4, 2));
     private JPanel gridPanel = new JPanel();
     private JTextField[][] textMatrix;
     private static final int DEFAULT_DURATION = 200;
@@ -28,27 +34,32 @@ public class GameOfLifeFrame extends JFrame {
         setTitle("生命游戏");
         openBtn.addActionListener(new OpenPage());
         startGameBtn.addActionListener(new StartGameActioner());
+        staticGame.addActionListener(new StaticGameActioner());
+        cycleGame.addActionListener(new CycleGameActioner());
+        gliderGame.addActionListener(new GliderGameActioner());
+        symmetricGame.addActionListener(new SymmetricGameActioner());
         buttonPanel.add(openBtn);
         buttonPanel.add(startGameBtn);
-//        buttonPanel.add(durationPromtLabel);
-        totalNum.addFocusListener(new FocusAdapter()
-        {
+        totalNum.addFocusListener(new FocusAdapter() {
             @Override
-            public void focusGained(FocusEvent e)
-            {
+            public void focusGained(FocusEvent e) {
                 totalNum.setText("");
             }
         });
         buttonPanel.add(totalNum);
-        durationTextField.addFocusListener(new FocusAdapter()
-        {
+        durationTextField.addFocusListener(new FocusAdapter() {
             @Override
-            public void focusGained(FocusEvent e)
-            {
+            public void focusGained(FocusEvent e) {
                 durationTextField.setText("");
             }
         });
         buttonPanel.add(durationTextField);
+        buttonPanel.add(staticGame);
+        buttonPanel.add(cycleGame);
+        buttonPanel.add(gliderGame);
+        buttonPanel.add(symmetricGame);
+
+
         buttonPanel.setBackground(Color.WHITE);
         getContentPane().add("North", buttonPanel);
         this.setSize(1000, 1200);
@@ -66,7 +77,7 @@ public class GameOfLifeFrame extends JFrame {
             try {
                 total = Integer.parseInt(totalNum.getText().trim());
             } catch (NumberFormatException e1) {
-                total = 50;
+                total = 3;
             }
             mainFunction = new MainFunction(total);
             startGameBtn.setText("开始游戏");
@@ -141,6 +152,53 @@ public class GameOfLifeFrame extends JFrame {
                     ex.printStackTrace();
                 }
             }
+        }
+    }
+
+    private class StaticGameActioner implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            mainFunction = new MainFunction(3, Data.startData);
+            startGameBtn.setText("开始游戏");
+            initGridLayout();
+            showMatrix();
+            gridPanel.updateUI();
+            new StartGameActioner().actionPerformed(e);
+
+        }
+    }
+
+    private class CycleGameActioner implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            mainFunction = new MainFunction(3, Data.cycleData);
+            startGameBtn.setText("开始游戏");
+            initGridLayout();
+            showMatrix();
+            gridPanel.updateUI();
+            new StartGameActioner().actionPerformed(e);
+
+        }
+    }
+
+    private class GliderGameActioner implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            mainFunction = new MainFunction(40, Data.gliderData);
+            startGameBtn.setText("开始游戏");
+            initGridLayout();
+            showMatrix();
+            gridPanel.updateUI();
+            new StartGameActioner().actionPerformed(e);
+
+        }
+    }
+
+    private class SymmetricGameActioner implements ActionListener {
+        public void actionPerformed(ActionEvent e) {
+            mainFunction = new MainFunction(5, Data.symmetricData);
+            startGameBtn.setText("开始游戏");
+            initGridLayout();
+            showMatrix();
+            gridPanel.updateUI();
+            new StartGameActioner().actionPerformed(e);
         }
     }
 }

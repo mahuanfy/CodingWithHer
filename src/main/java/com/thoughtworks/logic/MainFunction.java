@@ -1,7 +1,7 @@
 package com.thoughtworks.logic;
 
 public class MainFunction {
-    private int n = 100;
+    private int n =3;
     public int[][] matrix;
     public int[][] nextmatrix;
 
@@ -11,6 +11,12 @@ public class MainFunction {
         nextmatrix = new int[n][n];
     }
     public MainFunction(){
+    }
+
+    public MainFunction(int n,int matrix[][]){
+        this.n = n;
+        this.matrix =matrix;
+        nextmatrix = new int[n][n];
     }
 
     public void setN(int n) {
@@ -27,9 +33,6 @@ public class MainFunction {
                 matrix[i][j] = (int) Math.round(Math.random());
             }
         }
-
-//        matrix = new int[][]{{0, 0, 0}, {1, 1, 1}, {0, 0, 0}};
-//        matrix = new int[][]{{0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}, {1, 1, 1, 1, 1}, {0, 0, 0, 0, 0}, {0, 0, 0, 0, 0}};
     }
 
     public void setMatrix() {
