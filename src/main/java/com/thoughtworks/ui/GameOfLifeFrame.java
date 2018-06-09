@@ -94,7 +94,35 @@ public class GameOfLifeFrame extends JFrame {
         for (int y = 0; y < matrix.length; y++) {
             for (int x = 0; x < matrix[0].length; x++) {
                 if (matrix[y][x] > 0) {
-                    textMatrix[y][x].setBackground(Color.decode("#" +000000+ 72 * matrix[y][x] + 160 * matrix[y][x]));
+                    String color = "";
+                    switch (matrix[y][x]) {
+                        case 1:
+                            color = "#FF0000";
+                            break;
+                        case 2:
+                            color = "#FF7F00";
+                            break;
+                        case 3:
+                            color = "#FFFF00";
+                            break;
+                        case 4:
+                            color = "#00FF00";
+                            break;
+                        case 5:
+                            color = "#00FFFF";
+                            break;
+                        case 6:
+                            color = "#0000FF";
+                            break;
+                        case 7:
+                            color = "#8B00FF";
+                            break;
+                        default:
+                            color = "#000000";
+                    }
+//                    textMatrix[y][x].setBackground(Color.decode("#" + 000000 + 72 * matrix[y][x] + 160 * matrix[y][x]));
+//                    textMatrix[y][x].setBackground(Color.decode("#000000"));
+                    textMatrix[y][x].setBackground(Color.decode(color));
 
                 } else {
                     textMatrix[y][x].setBackground(Color.decode("#FFFFFF"));
@@ -155,7 +183,7 @@ public class GameOfLifeFrame extends JFrame {
 
     private class StaticGameActioner implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            mainFunction = new MainFunction(2, Data.startData);
+            mainFunction = new MainFunction(6, Data.startData);
             startGameBtn.setText("开始游戏");
             initGridLayout();
             showMatrix();

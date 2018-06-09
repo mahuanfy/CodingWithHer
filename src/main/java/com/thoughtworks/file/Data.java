@@ -1,7 +1,13 @@
 package com.thoughtworks.file;
 
 public class Data {
-    public static int [][] startData =new int[][]{{1,1}, {1, 1}};
+    public static int [][] startData =new int[][]{
+            {0,0,0,0,0,0},
+            {0,0,1,1,0,0},
+            {0,1,0,0,1,0},
+            {0,1,0,0,1,0},
+            {0,0,1,1,0,0},
+            {0,0,0,0,0,0}};
     public static int [][] cycleData =new int[][]{{0, 0, 0}, {1, 1, 1}, {0, 0, 0}};
     public static int [][] gliderData = new int[][]{
         {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},
