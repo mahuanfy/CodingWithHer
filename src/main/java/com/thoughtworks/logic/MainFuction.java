@@ -9,6 +9,10 @@ public class MainFuction {
         this.n = n;
     }
 
+    public int getN() {
+        return n;
+    }
+
     public void initMatrix() {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
@@ -58,6 +62,7 @@ public class MainFuction {
                 changeState(i, j);
             }
         }
+        setMatrix();
     }
 
     public void printWhole() {
