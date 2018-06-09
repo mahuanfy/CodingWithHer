@@ -14,50 +14,31 @@ public class GameOfLifeFrame extends JFrame {
     private JButton startGameBtn = new JButton("暂停");
     private JLabel durationPromtLabel = new JLabel("动画间隔设置(ms为单位)");
     private JTextField durationTextField = new JTextField();
-    /**
-     * 游戏是否开始的标志
-     */
     private boolean isStart = false;
-
-    /**
-     * 游戏结束的标志
-     */
     private boolean stop = false;
-
     private JPanel buttonPanel = new JPanel(new GridLayout(2, 2));
     private JPanel gridPanel = new JPanel();
-
     private JTextField[][] textMatrix;
-
-
-    /**
-     * 动画默认间隔200ms
-     */
     private static final int DEFAULT_DURATION = 200;
-
-    //动画间隔
     private int duration = DEFAULT_DURATION;
 
     public GameOfLifeFrame() {
         setTitle("生命游戏");
-        openBtn.addActionListener(new OpenFileActioner());
+        openBtn.addActionListener(new OpenPage());
         startGameBtn.addActionListener(new StartGameActioner());
-
         buttonPanel.add(openBtn);
         buttonPanel.add(startGameBtn);
         buttonPanel.add(durationPromtLabel);
         buttonPanel.add(durationTextField);
         buttonPanel.setBackground(Color.WHITE);
-
         getContentPane().add("North", buttonPanel);
-
         this.setSize(1000, 1200);
         this.setVisible(true);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
 
-    private class OpenFileActioner implements ActionListener {
+    private class OpenPage implements ActionListener {
 
         public void actionPerformed(ActionEvent e) {
             isStart = false;
@@ -67,11 +48,11 @@ public class GameOfLifeFrame extends JFrame {
             initGridLayout();
             showMatrix();
             gridPanel.updateUI();
+            new StartGameActioner().actionPerformed(e);
         }
     }
 
     private void showMatrix() {
-
         int[][] matrix = mainFuction.matrix;
         for (int y = 0; y < matrix.length; y++) {
             for (int x = 0; x < matrix[0].length; x++) {
@@ -103,19 +84,14 @@ public class GameOfLifeFrame extends JFrame {
         add("Center", gridPanel);
     }
 
-
     private class StartGameActioner implements ActionListener {
-
         public void actionPerformed(ActionEvent e) {
             if (!isStart) {
-
-                //获取时间
                 try {
                     duration = Integer.parseInt(durationTextField.getText().trim());
                 } catch (NumberFormatException e1) {
                     duration = DEFAULT_DURATION;
                 }
-
                 new Thread(new GameControlTask()).start();
                 isStart = true;
                 stop = false;
@@ -129,9 +105,7 @@ public class GameOfLifeFrame extends JFrame {
     }
 
     private class GameControlTask implements Runnable {
-
         public void run() {
-
             while (!stop) {
                 mainFuction.check();
                 showMatrix();
@@ -141,7 +115,6 @@ public class GameOfLifeFrame extends JFrame {
                     ex.printStackTrace();
                 }
             }
-
         }
     }
 }
